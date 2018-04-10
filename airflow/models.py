@@ -1763,7 +1763,7 @@ class TaskInstance(Base, LoggingMixin):
 
     def email_alert(self, exception, is_retry=False):
         task = self.task
-        title = "Airflow alert: {self}".format(**locals())
+        title = "Ether alert: {self}".format(**locals())
         exception = str(exception).replace('\n', '<br>')
         # For reporting purposes, we report based on 1-indexed,
         # not 0-indexed lists (i.e. Try 1 instead of
